@@ -96,6 +96,7 @@ progress.addEventListener('click' ,scrub);
 
 let mousedown = false;
 progress.addEventListener('click' ,scrub);
+// scrub(e) we pass due to upper function require e thats why we pass
 progress.addEventListener('mousemove' , (e)=> mousedown && scrub(e) );  //if mousedown is true then run surub(e)  if now return false and do nothing
 progress.addEventListener('mousedown' , ()=> mousedown = true );
 progress.addEventListener('mouseup' , ()=> mousedown = false );
